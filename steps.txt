@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=yuTrHeDYY3E&list=PLhdW5kzaHkt_ta0UeoKzlON2gf9fTpfAO&index=18
+
+01. pnpm init to generate package.json
+02. Volta to pick version of node on package.json
+03. pnpm add typescript
+04. pnpm add -D @tsconfig/node18 to generate baseline ts-config
+05. touch tsconfig.json
+06. tsconfig.json >> {"extends": "@tsconfig/node18/tsconfig.json"} plus additional config
+07. mkdir src
+08. touch src/index.ts
+09. pnpm add -D @types/node to add node api types (like console.log())
+10. .vscode/settings.json {
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
+11. pnpm add -D @swc/cli @swc/core rimraf to compile typescript
+12. create and configure .swcrc
+13. 
